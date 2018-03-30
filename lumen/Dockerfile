@@ -1,5 +1,6 @@
-FROM malitta/php-base
-MAINTAINER Malitta Nanayakkara <malitta@gmail.com>
+FROM jover/php-base
+LABEL maintainer="Joost Vermeulen <joost@jover.net>" \
+      original_maintainer="Malitta Nanayakkara <malitta@gmail.com>"
 
 RUN apt-get update && apt-get install -y \
 	php-mcrypt \	
